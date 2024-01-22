@@ -64,7 +64,7 @@ export default {
     ...mapMutations(['handleDialogState']),
     async compareVersions() {
       // 获取本地的version和github上最新的version，如果不同就显示提示圆点
-      const { tag_name: githubV } = await get('/githubApi/repositories/190842308/releases/latest')
+      const { tag_name: githubV } = await get('./githubApi/repositories/190842308/latest.json')
       const version = storage.get('version')
       if (githubV !== version) {
         this.isLogRead = false

@@ -56,7 +56,8 @@ export default {
       this.handleDialogState('')
     },
     async getVersionLogs() {
-      const logs = await get('/githubApi/repositories/190842308/releases')
+      // const logs = await get('./githubApi/repositories/190842308/releases.json')
+      const logs = await get('./githubApi/repositories/190842308/releases.json')
       const res = []
       for(let log of logs){
         let { name: title, tag_name: version, body: content, published_at: pubTime } = log

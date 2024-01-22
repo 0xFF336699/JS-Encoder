@@ -125,7 +125,8 @@ export default {
        * Request cdnJS to get the name and version of libraries
        * 请求cdnJS获取库的名字和版本
        */
-      get('/qiNiuCdn/cdn.json')
+      console.log("xxxxxxxxxxxxxxxxxx")
+      get('./qiNiuCdn/cdn.json')
         .then((res) => {
           const list = res.results
           this.cssLibList = list.filter((item) => item.fileType === 'css')

@@ -52,6 +52,7 @@ export default class InstanceDownloader {
       const linkStr = `\t<script src="${JSLinks[i]}"></script>\n`
       extJS += linkStr
     }
+    console.log('xxxxxxxxxxxxxxxxxxxxxxxxx')
     if (type === 'single') {
       this.single({ HTMLCode, CSSCode, JSCode }, { extCss, extJS }, headTags)
       if (dwPrep) {

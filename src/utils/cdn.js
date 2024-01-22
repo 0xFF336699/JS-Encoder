@@ -17,7 +17,7 @@ const iframeLinks = {
     'https://cdn.staticfile.org/KaTeX/0.13.13/contrib/auto-render.min.js'
   ],
   commonJS: [
-    '/js/common/JSEController.js'
+    './js/common/JSEController.js'
   ]
 }
 
